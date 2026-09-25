@@ -8,8 +8,9 @@ import {
   ExplainabilityResponse,
 } from '../types';
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, '') || 'http://localhost:4000/api';
+const API_BASE_URL = `${
+  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, '') || 'http://localhost:4000'
+}/api`;
 
 /**
  * Fetch all 14 Panchayats in Baramati Block with PostGIS GeoJSON geometry.
