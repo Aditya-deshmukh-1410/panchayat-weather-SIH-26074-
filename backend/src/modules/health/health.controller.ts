@@ -19,7 +19,16 @@ export class HealthController {
       const response = await axios.get(`${mlServiceUrl}/health`, { timeout: 3000 });
       mlServiceStatus = { status: 'connected', details: response.data };
     } catch (err: any) {
-      mlServiceStatus = { status: 'unreachable', details: err.message };
+      mlServiceStatus = {
+        status: 'unreachable',
+        details: {
+          message: err.message,
+          code: err.code ?? null,
+          status: err.response?.status ?? null,
+          response: err.response?.data ?? null,
+          url: `${mlServiceUrl}/health`,
+        },
+      };
     }
 
     const dbHealth = await this.databaseService.getHealthStatus();
