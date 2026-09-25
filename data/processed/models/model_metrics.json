@@ -1,0 +1,37 @@
+{
+  "baseline": {
+    "validation": {
+      "mae": 6.4544,
+      "rmse": 11.4397,
+      "r2": -0.2715,
+      "bias": 1.5319
+    },
+    "test": {
+      "mae": 2.7045,
+      "rmse": 7.9863,
+      "r2": -0.1039,
+      "bias": -0.5554
+    }
+  },
+  "xgboost": {
+    "validation": {
+      "mae": 5.1681,
+      "rmse": 8.9348,
+      "r2": 0.2243,
+      "bias": -1.5013
+    },
+    "test": {
+      "mae": 2.4683,
+      "rmse": 6.0922,
+      "r2": 0.3576,
+      "bias": -0.2213
+    }
+  },
+  "comparison_test": {
+    "mae_reduction_mm": 0.2362,
+    "mae_reduction_pct": 8.73,
+    "rmse_reduction_mm": 1.8941,
+    "rmse_reduction_pct": 23.72,
+    "r2_improvement": 0.4615
+  }
+}

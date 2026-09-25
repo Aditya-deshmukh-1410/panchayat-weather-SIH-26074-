@@ -1,0 +1,24 @@
+{
+  "method": "Split Conformal Prediction (Non-Conformity = |y - y_hat|)",
+  "calibration_partition": "val (2024-05-01 to 2024-08-31)",
+  "calibration_sample_count": 1722,
+  "test_partition": "test (2024-09-01 to 2024-12-31, completely untouched during calibration)",
+  "test_sample_count": 1708,
+  "intervals": {
+    "nominal_coverage_90": {
+      "alpha": 0.1,
+      "conformal_quantile_level": 0.9006968641114983,
+      "q_hat_mm": 13.3181,
+      "empirical_test_coverage_pct": 95.26,
+      "mean_interval_width_mm": 16.0298
+    },
+    "nominal_coverage_80": {
+      "alpha": 0.2,
+      "conformal_quantile_level": 0.8008130081300813,
+      "q_hat_mm": 8.1682,
+      "empirical_test_coverage_pct": 90.69,
+      "mean_interval_width_mm": 10.3381
+    }
+  },
+  "coverage_guarantee_validity": "Finite-sample valid under exchangeability between validation and test error distributions"
+}

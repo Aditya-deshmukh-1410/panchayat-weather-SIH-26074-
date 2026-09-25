@@ -1,0 +1,16 @@
+{
+  "model_name": "baseline_block_rainfall",
+  "description": "Spatial persistence baseline where downscaled Panchayat rainfall is assumed equal to coarse block rainfall",
+  "validation": {
+    "mae": 6.4544,
+    "rmse": 11.4397,
+    "r2": -0.2715,
+    "bias": 1.5319
+  },
+  "test": {
+    "mae": 2.7045,
+    "rmse": 7.9863,
+    "r2": -0.1039,
+    "bias": -0.5554
+  }
+}

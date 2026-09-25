@@ -1,0 +1,5 @@
+regime,sample_count,pct_of_test_data,small_sample_flag,baseline_mae,ml_mae,mae_reduction,baseline_rmse,ml_rmse,baseline_bias,ml_bias
+Dry / No Rain (<1 mm),1174,68.74,NO,0.3727,0.6123,-0.2396,0.9788,1.8607,0.296,0.5842
+Light Rain (1-<5 mm),228,13.35,NO,2.7542,3.6567,-0.9025,3.8463,5.2999,1.0904,2.3291
+Moderate Rain (5-<20 mm),214,12.53,NO,5.4987,5.0159,0.4828,7.9601,6.4673,-3.2235,-0.0357
+Heavy Rain (>=20 mm),92,5.39,"YES (N<100, interpret with caution)",25.837,17.2809,8.5561,31.4298,21.8625,-9.2935,-17.2519

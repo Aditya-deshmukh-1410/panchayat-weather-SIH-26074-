@@ -1,0 +1,101 @@
+# ==============================
+# Environment / secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Node.js
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# ==============================
+# PostgreSQL local runtime
+# ==============================
+database/data/
+database/*.log
+database/**/*.log
+
+# ==============================
+# Local PostgreSQL/PostGIS installation
+# ==============================
+database/pgsql/
+
+# ==============================
+# Database backups / dumps
+# ==============================
+*.dump
+*.backup
+*.bak
+
+# ==============================
+# Large archives / installers
+# ==============================
+*.zip
+*.7z
+*.tar
+*.gz
+
+# ==============================
+# OS / editor files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Coverage
+# ==============================
+coverage/
+htmlcov/
+
+# ==============================
+# Build artifacts
+# ==============================
+dist/
+build/
+*.tsbuildinfo
+# TypeScript build info
+*.tsbuildinfo
+
+# ML service virtual environment
+ml-service/venv/

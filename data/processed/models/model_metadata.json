@@ -1,0 +1,58 @@
+{
+  "model_type": "XGBRegressor",
+  "framework": "xgboost",
+  "xgboost_version": "3.2.0",
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "target_variable": "panchayat_rainfall_mm",
+  "target_unit": "mm/day",
+  "target_source": "ERA5-Land 0.1 deg reanalysis reference proxy",
+  "feature_count": 17,
+  "features": [
+    "block_rainfall",
+    "block_temp_max",
+    "block_temp_min",
+    "block_humidity",
+    "block_wind_speed",
+    "latitude",
+    "longitude",
+    "elevation_m",
+    "area_sqkm",
+    "dist_to_block_center_km",
+    "rainfall_lag_1d",
+    "rainfall_lag_2d",
+    "rainfall_lag_3d",
+    "rainfall_rolling_7d_mean",
+    "rainfall_rolling_7d_max",
+    "day_of_year",
+    "month"
+  ],
+  "hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "partitions": {
+    "train": {
+      "start": "2023-01-01",
+      "end": "2024-04-30",
+      "rows": 6804
+    },
+    "val": {
+      "start": "2024-05-01",
+      "end": "2024-08-31",
+      "rows": 1722
+    },
+    "test": {
+      "start": "2024-09-01",
+      "end": "2024-12-31",
+      "rows": 1708
+    }
+  },
+  "study_area": "Baramati Block, Pune District, Maharashtra",
+  "panchayat_count": 14,
+  "leakage_audit_passed": true
+}
