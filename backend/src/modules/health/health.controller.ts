@@ -16,7 +16,7 @@ export class HealthController {
     let mlServiceStatus = { status: 'unknown', details: null as any };
 
     try {
-      const response = await axios.get(`${mlServiceUrl}/health`, { timeout: 3000 });
+      const response = await axios.get(`${mlServiceUrl}/health`, { timeout: 15000 });
       mlServiceStatus = { status: 'connected', details: response.data };
     } catch (err: any) {
       mlServiceStatus = {
